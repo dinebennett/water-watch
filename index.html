@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Water Watch Cape Town</title>
+    <script src="http://d3js.org/d3.v3.min.js" language="JavaScript"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/liquidFillGauge.js" language="JavaScript"></script>
+    <script src="js/index.js" language="JavaScript"></script>
+    <script src="js/jquery.number.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+</head>
+
+<body>
+
+<div class="content">
+
+    <div class="container container-loading text-xs-center">
+        <div class="row">
+            <div class="loading-inside">
+                <h1> LOADING...</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container container-main">
+
+        <div class="row">
+            <div class="pad-content">
+                <div class="col-md-4 text-xs-center col-dam">
+                    <svg id="dam1" width="97%" height="250"></svg>
+                    <h4 class="dam-name">BERG RIVER</h4>
+                    <p class="percentage">(<span class="diff1 font-weight-bold">-</span> from last week)</p>
+                </div>
+                <div class="col-md-4 text-xs-center col-dam">
+                    <svg id="dam2" width="97%" height="250"></svg>
+                    <h4 class="dam-name">STEENBRAS LOWER</h4>
+                    <p class="percentage">(<span class="diff2 font-weight-bold">-</span> from last week)</p>
+                </div>
+                <div class="col-md-4 text-xs-center col-dam">
+                    <svg id="dam3" width="97%" height="250"></svg>
+                    <h4 class="dam-name">STEENBRAS UPPER</h4>
+                    <p class="percentage">(<span class="diff3 font-weight-bold">-</span> from last week)</p>
+                </div>
+                <div class="col-md-4 text-xs-center col-dam">
+                    <svg id="dam4" width="97%" height="250"></svg>
+                    <h4 class="dam-name">THEEWATERSKLOOF</h4>
+                    <p class="percentage">(<span class="diff4 font-weight-bold">-</span> from last week)</p>
+                </div>
+                <div class="col-md-4 text-xs-center col-dam">
+                    <svg id="dam5" width="97%" height="250"></svg>
+                    <h4 class="dam-name">VOELVLEI</h4>
+                    <p class="percentage">(<span class="diff5 font-weight-bold">-</span> from last week)</p>
+                </div>
+                <div class="col-md-4 text-xs-center col-dam">
+                    <svg id="dam6" width="97%" height="250"></svg>
+                    <h4 class="dam-name">WEMMERSHOEK</h4>
+                    <p class="percentage">(<span class="diff6 font-weight-bold">-</span> from last week)</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="footer">
+    <div class="footer-top">
+        <p class="date-updated">Loading...</p>
+    </div>
+    <div class="footer-bottom">
+        <p class="small-text">
+            <i class="fa fa-heart"></i> Made by <a href="https://twitter.com/dinebennett" target="_blank">Diné</a>
+            | With thanks to <a href="http://bl.ocks.org/brattonc/5e5ce9beee483220e2f6" target="_blank">Curtis Bratton</a> and <a href="https://d3js.org/" target="_blank">d3js</a>
+            | Data from City of Cape Town <a href="https://web1.capetown.gov.za/web1/OpenDataPortal/" target="_blank">Open Data Portal</a>
+        </p>
+    </div>
+</div>
+
+</body>
+
+</html>

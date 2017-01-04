@@ -1,0 +1,76 @@
+
+.liquidFillGaugeText {
+    font-weight: bold;
+}
+
+.col-dam {
+    margin-bottom: 40px;
+}
+
+.percentage {
+    font-size: 14px;
+}
+
+.small-text {
+    font-size: 14px;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    border: 1px solid transparent;
+}
+
+.pad-content {
+    padding-top: 60px;
+    padding-bottom: 250px;
+}
+
+.content {
+    box-sizing: border-box;
+    min-height: 100%;
+}
+
+.container-main {
+    display: none;
+}
+
+.loading-inside {
+    padding-top: 50px;
+}
+
+.footer {
+    text-align: center;
+    width: 100%;
+    position: relative;
+    clear: both;
+    margin-top: -100px;
+    height: 100px;
+    background-color: #949494;
+}
+
+.footer-top {
+    background-color: white;
+    padding-bottom: 1px;
+}
+
+.footer-bottom {
+    padding-top: 15px;
+    color: #e2e2e2;
+}
+
+.footer-bottom > p {
+    margin-bottom: 0;
+}
+
+a {
+    color: #e2e2e2;
+    text-decoration: underline;
+}
+
+a:focus, a:hover {
+    color: #337ab7;
+    text-decoration: underline;
+}
