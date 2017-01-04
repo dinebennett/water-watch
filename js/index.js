@@ -37,8 +37,6 @@ $(document).ready(function () {
 
             stats.items.forEach(function (item) {
 
-                console.log(item);
-
                 var damconfig = liquidFillGaugeDefaultSettings();
                 damconfig.waveAnimateTime = 1500;
                 if (item.perc >= 80) {
@@ -52,32 +50,26 @@ $(document).ready(function () {
 
                 switch (item.name) {
                     case "BERG RIVER":
-                        console.log('berg river');
                         $('.diff1').text(formatNumber(diff) + "%").addClass(diff < 0 ? 'text-danger' : 'text-success');
                         var dam1 = loadLiquidFillGauge("dam1", item.perc, damconfig);
                         break;
                     case "STEENBRAS LOWER":
-                        console.log('s lower');
                         $('.diff2').text(formatNumber(diff) + "%").addClass(diff < 0 ? 'text-danger' : 'text-success');
                         var dam2 = loadLiquidFillGauge("dam2", item.perc, damconfig);
                         break;
                     case "STEENBRAS UPPER":
-                        console.log('s upper');
                         $('.diff3').text(formatNumber(diff) + "%").addClass(diff < 0 ? 'text-danger' : 'text-success');
                         var dam3 = loadLiquidFillGauge("dam3", item.perc, damconfig);
                         break;
                     case "THEEWATERSKLOOF":
-                        console.log('theewaterskloof');
                         $('.diff4').text(formatNumber(diff) + "%").addClass(diff < 0 ? 'text-danger' : 'text-success');
                         var dam4 = loadLiquidFillGauge("dam4", item.perc, damconfig);
                         break;
                     case "VO�LVLEI":
-                        console.log('voelvlei');
                         $('.diff5').text(formatNumber(diff) + "%").addClass(diff < 0 ? 'text-danger' : 'text-success');
                         var dam5 = loadLiquidFillGauge("dam5", item.perc, damconfig);
                         break;
                     case "WEMMERSHOEK":
-                        console.log('wemmershoek');
                         $('.diff6').text(formatNumber(diff) + "%").addClass(diff < 0 ? 'text-danger' : 'text-success');
                         var dam6 = loadLiquidFillGauge("dam6", item.perc, damconfig);
                         break;
