@@ -80,6 +80,7 @@ $(document).ready(function () {
         },
         error: function (httpReq, status, exception) {
             console.log("Oh dear, an error occurred.");
+            $('.loading-inside').html("<h3>Eish, there appears to be a temporary gremlin in the system.<br/> Please check back soon.</h3>")
         }
     });
 
